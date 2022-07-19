@@ -1,0 +1,14 @@
+body{
+    background: linear-gradient(to bottom,rgb(12, 202, 142),rgb(212, 124, 187));
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+
+
+h1{
+    color: whitesmoke;
+    background-color: red;
+}
+p{
+    color: red;
+}
