@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun(){
+            var n=document.getElementById("balls").value;
+            var m=document.getElementById("team").value;
+            var ans=parseInt(n/m);
+            var rem=n%m;
+            document.getElementById("output").innerHTML="Each member will get balls = "+ans+"<br>Remaining balls ="+rem;
+        }
+    </script>
+</head>
+<body>
+    Balls <input type="text" id="balls">
+    <br><br>
+    Team Members <input type="text" name="team" id="team"><br><br>
+    <button onclick="myfun()">Calculate</button>
+    <p id="output"></p>
+</body>
+</html>
