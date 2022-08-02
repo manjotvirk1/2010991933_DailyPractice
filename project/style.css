@@ -1,0 +1,40 @@
+body{
+    background-image: url(img.jpg);
+    background-size: cover;
+}
+
+.div1{
+    background-color: rgb(209, 234, 234);
+    margin: 20px;
+    margin-top: 0;
+    height: 50px;
+}
+.div2{
+    margin: 20px;
+    height: 30px;
+    text-align: center;
+    color: beige;
+    /* margin-top: 40px; */
+}
+.div3{
+    background-color: rgb(209, 234, 234);
+    margin: 20px;
+    height: 200px;
+}
+.div4{
+    width:97%;
+    margin:auto;
+    border:7px solid rgb(140, 140, 190);
+    text-align: center;
+}
+.column {
+    width: 120px;
+    padding: 10px;
+    height: 120px; 
+    margin-left: 10px;
+    margin-top:2.5%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}

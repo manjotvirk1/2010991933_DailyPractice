@@ -1,0 +1,38 @@
+/*html{
+    font-size:32px //root
+}
+body{
+    font-size: 16px;
+}
+#mainDiv{
+    font-size: 32px;
+}
+#div1{
+    font-size: 1em;
+}
+#div2{
+    font-size: 1rem;
+}
+#div3{
+    font-size: 1em;
+} */
+
+body{
+    background: linear-gradient(to bottom,rgb(249, 249, 249),rgba(0, 88, 183, 0.4));
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size:1.15em;
+    text-align: justify;
+    font-family: "Lato",sans-serif;
+}
+
+#title{
+    color:rgb(64, 69, 217);
+    font-family:"Sarabun",sans-serif;
+}
+#service-image{
+    height:400px;
+    width:70vw;
+    background:radial-gradient(circle,rgb(200, 187, 187) 20%,rgb(114, 114, 241) 40%,rgb(148, 215, 148) 55%);
+    border:10px solid rosybrown;
+}
