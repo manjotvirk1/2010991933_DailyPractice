@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function day(){
+            var num=parseInt(document.getElementById("n").value);
+            var ans;
+            switch(num){
+                case (1):ans = "Monday";
+                    break;
+                case 2:
+                    ans="Tuesday";
+                    break;
+                case 3:
+                    ans="Wednesday";
+                    break;
+                case 4:
+                    ans="Thursday";
+                    break;
+                case 5:
+                    ans="Friday";
+                    break;
+                case 6:
+                    ans="Saturday";
+                    break;
+                case 7:
+                    ans="Sunday";
+                    break;
+                default:
+                    ans="Enter the correct number";
+            }
+            document.getElementById("res").innerHTML="Day = "+ans;
+        }
+    </script>
+</head>
+<body>
+    Enter the day <input type="number" name="n" id="n">
+    <button onclick="day()">Find day</button>
+    <p id="res"></p>
+</body>
+</html>

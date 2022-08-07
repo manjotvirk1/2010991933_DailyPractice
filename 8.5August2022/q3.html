@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin: 1%;
+            padding: 1%;
+        }
+    </style>
+    <script>
+        function cal(){
+            var a = parseInt(document.getElementById("start").value);
+            var b = parseInt(document.getElementById("end").value);
+            var d= document.getElementById("k").value;
+            var nums="";
+            for(var i=a; i<=b; i++){
+                if(i%d==0)nums=nums+i;
+                nums+=" ";
+            }
+            document.getElementById("res").innerHTML=nums;
+        }
+    </script>
+</head>
+<body>
+    Start<input type="number" name="start" id="start"><br>
+    End<input type="number" name="end" id="end"><br>
+    K <input type="number" name="k" id="k"><br>
+    <Button onclick="cal()">Divisible by K</Button>
+    <p id="res"></p>
+</body>
+</html>

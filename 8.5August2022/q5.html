@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #sq{
+            width:200px;
+            height: 200px;
+            background-color: brown;
+            margin: auto;
+            animation: circle 2s 1;
+        }
+        button{
+            margin: 2%;
+            padding: 1%;
+        }
+
+        @keyframes c1 {
+            0%  {
+                border-radius:0 0 0 0;
+            }
+            100% {
+                border-radius:80% 80% 80% 80%;
+            }
+        }
+    </style>
+    <script>
+        function cir(){
+            var temp=document.getElementById("sq");
+            temp.style.animation="c1 4s 1";
+        }
+    </script>
+</head>
+<body>
+    <div id="sq"></div>
+    <button onclick="cir()">Click</button>
+</body>
+</html>

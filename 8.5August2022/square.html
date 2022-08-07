@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="square.css">
+    <script>
+        // const para=document.getElementById("ans");
+        // para.innerHTML = 'sjhu';
+        function createSq(){
+            var n=document.getElementById("num").value;
+            var p=n;
+            var sum=0;
+            const len=p.toString().length;
+            // alert(len);
+            if(len!=5)alert("Please enter the 5 digit number");
+            else{
+                while(n!=0){
+                    sum=sum+(n%10);
+                    n=parseInt(n/10)
+                }
+                var ll=sum/5;
+                alert(ll);
+                // document.getElementById(ans).style("width:l; height:l");
+                const temp=document.getElementById("ans");
+                temp.style.innerHTML="block";
+                document.getElementById("ans").innerHTML=l;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="outer">
+        <h2>Enter the number to create a square shape</h2>
+        <form>
+        <input type="text" name="num" id="num">
+        <br>
+        <button click="createSq()">Create square</button>
+        <button type="reset">Reset</button>
+        </form>
+    </div>
+    <p id="ans">
+
+    </p>
+</body>
+</html>

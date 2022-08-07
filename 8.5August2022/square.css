@@ -1,0 +1,24 @@
+#outer{
+    text-align: center;
+    width:80%;
+    background-color: rgb(172, 223, 223);
+    margin: auto;
+    padding: 5%;
+    margin-top: 50px;
+}
+
+button{
+    margin: 2%;
+    padding :1% 2%;
+    background-color: azure;
+    font-weight: bold;
+}
+
+input{
+    width: 60%;
+    padding: 1%;
+}
+
+#ans{
+    background-color: blueviolet;
+}
