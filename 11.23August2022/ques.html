@@ -1,0 +1,49 @@
+<!-- var employees = [];
+
+employees.push( {name:"George", age:32, retiredate:"March 12, 2014"} );
+employees.push( {name:"Edward", age:17, retiredate:"June 2, 2023"} );
+employees.push( {name:"Christine", age:58, retiredate:"December 20, 2036"} );
+employees.push( {name:"Sarah", age:62, retiredate:"April 30, 2020"} );
+
+employees.sort(function(a, b){
+  return a.age - b.age;
+}); -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter the age : <input type="number" name="n1" id="n1">
+    <button onclick="fn()">Find</button>
+    <p id="res"></p>
+    <script>
+        var employees=[];
+        employees.push( {name:"George", age:62, retiredate:"March 12, 2014"} );
+        employees.push( {name:"Edward", age:17, retiredate:"June 2, 2023"} );
+        employees.push( {name:"Christine", age:58, retiredate:"December 20, 2036"} );
+        employees.push( {name:"Sarah", age:62, retiredate:"April 30, 2020"} );
+        function fn(){
+            let a=document.getElementById("n1").value;
+            let flag=false;
+            for(var i=0; i<employees.length; i++){
+                if(employees[i].age==a){
+                    document.getElementById("res").innerHTML+="Name : "+employees[i].name+"<br> Retire Date : "+employees[i].retiredate+"<br>";
+                    flag=true;
+                    // break;
+                }
+            }
+            try{
+                if(!flag)throw "No such employee exist";
+            }
+            catch(err){
+                document.getElementById("res").innerHTML=err;
+            }
+        }
+    </script>
+</body>
+</html>

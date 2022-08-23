@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Validation using RegExp</h1>
+    <script>
+        function getData(){
+            var name=document.getElementById("myname").value;
+            var phone=document.getElementById("myphone").value;
+            localStorage.setItem("txtValue",name);
+            localStorage.setItem("txtValue1",phone);
+        }
+        function check(myForm){
+            if(myForm.myname.value=="" || myForm.myname.value==NULL){
+                alert("Name is mandatory");
+                return false;
+            }
+            if(myForm.myphone.value=="" || myForm.myphone.value==NULL){
+                alert("Phone No. is mandatory");
+                return false;
+            }
+            else return true;
+        }
+    </script>
+    <form 
+    name="formvalidate"
+    action="display.html"
+    method="get"
+    onsubmit="return check(formvalidate)"
+    >
+        <p>Name : <input type="text" name="myname" size="30" id="myname"></p>
+        <p>Phone no : <input type="text" name="myphone" size="10" id="myphone"></p>
+        <p>
+            <input type="submit" value="Submit" onclick="getData()">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+    <script>
+        
+    </script>
+</body>
+</html> 

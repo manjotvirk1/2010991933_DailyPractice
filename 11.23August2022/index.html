@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="n1" id="n1" placeholder="Enter a number" />
+    <button onclick="myFn()">Click</button>
+    <p id="p1"></p>
+    <p id="error"></p>
+    
+    <script>
+        // let a=0;
+        // a+=1;
+        // try{
+        //     alertt("Hi");
+        // }
+        // catch(err){
+        //     document.getElementById("error").innerHTML=err.message;
+        // }
+        // a+=1;
+        // document.getElementById("p1").innerHTML=a;
+        function myFn(){
+            let a =document.getElementById("n1").value;
+            try{
+                if(!isNaN(a)){
+                    a=Number(a);
+                    document.getElementById("p1").innerHTML=a;
+                }
+                else{
+                    throw "Not a Number";
+                }
+            }
+            catch(err){
+                document.getElementById("error").innerHTML=err;
+            }
+        }
+        
+    </script>
+</body>
+</html>
