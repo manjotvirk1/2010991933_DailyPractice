@@ -7,11 +7,30 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="f1()">Click</button>
     <script>
-        function f1(){
-            function pro(a,b){
-                if(b==0 || )
+        function f1() {
+            function pro(a, b) {
+                if (b == 0 || a < b) {
+                    throw "Error";
+                } else {
+                    return a / b;
+                }
             }
+            async function f() {
+                let p = new Promise((resolve, reject) => {
+                if (pro(25, 20) == "Error") {
+                setTimeout(function () {
+                    reject(new Error("Whoops!"));
+                }, 1000);
+                } else {
+                setTimeout(() => resolve("Result is " + pro(25, 20)), 1000);
+                }
+            }).catch(alert);
+            let result = await p;
+            alert(result);
+            }
+            f();
         }
     </script>
 </body>
