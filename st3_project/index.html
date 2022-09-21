@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="headerDiv">
+        <label>Enter the Weight</label>
+        <input type="number" id="inputWeight" onchange="calWeight()">
+    </div>
+    <div class="container">
+        <img id="planetImage" src="planets.jpg" usemap="#workmap">
+        <map name="workmap">
+            <area shape="circle" coords="130,270,100" onclick="sun()">
+            <area shape="circle" coords="290,288,25" onclick="mercury()">
+            <area shape="circle" coords="390,285,60" onclick="venus()">
+            <area shape ="circle" coords="490,260,50" onclick="earth()">
+            <area shape="circle" coords="610,280,10" onclick="moon()">
+            <area shape="circle" coords="690,275,45" onclick="mars()">
+            <area shape="circle" coords="825,280,70" onclick="jupiter()">
+            <area shape="circle" coords="980,280,55" onclick="saturn()">
+            <area shape="circle" coords="1100,280,50" onclick="uranus()">
+            <area shape="circle" coords="1220,280,50" onclick="neptune()">
+            <area shape="circle" coords="1300,280,15" onclick="pluto()">
+        </map>
+        <div class="output">
+            <span id="planetName"></span><br>
+            <span id="finalWeight"></span>
+        </div>
+    </div>
+</body>
+</html>
