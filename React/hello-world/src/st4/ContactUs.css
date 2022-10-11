@@ -1,0 +1,30 @@
+.innerDiv{
+    width: 100%;
+    margin-top: 2%;
+}
+input,textarea{
+    width: 100%;
+}
+form{
+    width:60%;
+    margin: auto;
+    border: 2px solid grey;
+    padding: 3%;
+}
+.outerDiv{
+    text-align: center;
+    margin: auto;
+}
+h2{
+    padding: 2%;
+}
+button{
+    padding: 2%;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(84, 100, 94);
+    border-radius: 18px;
+}
+button:hover{
+    background-color: antiquewhite;
+}

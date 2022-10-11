@@ -1,0 +1,14 @@
+.homeDiv{
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+}
+.heading{
+    text-align: center;
+}
+li{
+    margin-top: 2%;
+}
+p{
+    margin: 2%;
+}

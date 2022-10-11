@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "name": "Manjot",
+      "mobile": "1234567889",
+      "email": "manjot1933.be20@chitkara.edu.in",
+      "password": "qwertyuiop",
+      "id": 1
+    },
+    {
+      "name": "Mk",
+      "mobile": "999898912",
+      "email": "manjot@gmail.com",
+      "password": "manjotkaur",
+      "id": 2
+    },
+    {
+      "name": "Moghasha",
+      "mobile": "12345678",
+      "email": "moghasha1943.be20@chitkara.edu.in",
+      "password": "23w4etfrghkij",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

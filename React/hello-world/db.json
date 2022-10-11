@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "name": "manjot",
+      "mobile": "123",
+      "email": "jgyg@hj",
+      "password": "q23",
+      "id": 1
+    },
+    {
+      "name": "k",
+      "mobile": "89",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "213",
+      "mobile": "987",
+      "email": "jgyg@hj",
+      "password": "987y6hj",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

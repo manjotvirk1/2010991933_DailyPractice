@@ -1,0 +1,21 @@
+.navbar-list{
+    display: flex;
+    gap:3.8rem;
+}
+.navbar-link{
+    margin-top: 20%;
+}
+.navbar-link:link,:visited{
+    display: inline-block;
+    text-decoration:none;
+    font-size:1rem;
+    text-transform:uppercase;
+    color:rgb(2, 7, 51);
+    transition:rgb(67, 43, 43) 0.3s linear;
+}
+.navbar-link:hover,:active{
+    color: rgb(97, 117, 117);
+}
+li{
+    list-style: none;
+}
