@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    background-color: #282D35;
+}
+nav{
+    display:flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding:30px 25px;
+}
+.nav--icon{
+    height: 6vw;
+}
+
+.nav--logo , .nav--title{
+    margin: 0;
+}
+.nav--logo{
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+.nav--title{
+    color: #DEEBFB;
+}
+
+main{
+    padding:57px 27px;
+    height:100vw ;
+    color: white;
+    background-color: #282D35;
+}
+.main-title{
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    line-height: 47px;
+    font-style: normal;
+    font-family: Inter;
+}
+.main--facts{
+    margin-top: 46px;
+}

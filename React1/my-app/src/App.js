@@ -16,7 +16,7 @@ function App() {
       <EvenOdd num="12"/> */
     // </div>
     <>
-    <Planet/>
+    {/* <Planet/> */}
     </>
   );
 }

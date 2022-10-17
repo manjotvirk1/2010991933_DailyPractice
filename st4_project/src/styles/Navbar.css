@@ -3,7 +3,7 @@
     gap:3.8rem;
 }
 .navbar-link{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .navbar-link:link,:visited{
     display: inline-block;

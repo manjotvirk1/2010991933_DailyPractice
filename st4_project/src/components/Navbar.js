@@ -20,6 +20,9 @@ const Navbar=()=>{
                         <NavLink to='/userdata' className="navbar-link">UserData</NavLink>
                     </li>
                     <li>
+                        <NavLink to='/postForm' className="navbar-link">Upload Image</NavLink>
+                    </li>
+                    <li>
                         <NavLink to='/register' className="navbar-link">Register</NavLink>
                     </li>
                 </ul>

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import '../styles/Register.css'
+// import Login from './Login';
 const Register=()=>{
     const[registerData,setRegisterData]=useState({
         name:"",
@@ -34,32 +35,28 @@ const Register=()=>{
                     <label for="inputName">Name</label>
                     <input type="text" required className="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Enter the Name" 
                     value={registerData.name}
-                    onChange={(e)=>setRegisterData({ ...
-                        registerData,name:e.target.value
+                    onChange={(e)=>setRegisterData({ ...registerData,name:e.target.value
                     })}/>
                 </div>
                 <div className="form-group">
                     <label for="inputMobile">Mobile Number</label>
                     <input type="number" required className="form-control" id="inputMobile" aria-describedby="nameHelp" placeholder="Enter the Mobile Number" 
                     value={registerData.mobile}
-                    onChange={(e)=>setRegisterData({ ...
-                        registerData,mobile:e.target.value
+                    onChange={(e)=>setRegisterData({ ...registerData,mobile:e.target.value
                     })}/>
                 </div>
                 <div className="form-group">
                     <label for="inputEmail">Email address</label>
                     <input type="email" required className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" 
                     value={registerData.email}
-                    onChange={(e)=>setRegisterData({ ...
-                        registerData,email:e.target.value
+                    onChange={(e)=>setRegisterData({ ...registerData,email:e.target.value
                     })}/>
                 </div>
                 <div className="form-group">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" required className="form-control" id="exampleInputPassword1" placeholder="Password" 
                     value={registerData.password}
-                    onChange={(e)=>setRegisterData({ ...
-                        registerData,password:e.target.value
+                    onChange={(e)=>setRegisterData({ ...registerData,password:e.target.value
                     })}/>
                 </div>
                 {/* <div className="form-check">
